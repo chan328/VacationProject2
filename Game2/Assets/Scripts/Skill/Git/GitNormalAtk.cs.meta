@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: b9400791f275dea4693b9d160cd1776e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - GitAttack: {fileID: 1018046404631730, guid: 609f61c9e22467f419b24391d656b2e5,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -226,7 +226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 349140a8e9efdda489beb21d3e03b598, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Attack: {fileID: 1385536226432682, guid: f16e721b6464b904098236c251550b0e, type: 2}
+  Attack: {fileID: 1297054057321592, guid: eafce52d9e542d94aa413eb099c7c321, type: 2}
   Can_useSkill2: 0
 --- !u!212 &212360643191968466
 SpriteRenderer:

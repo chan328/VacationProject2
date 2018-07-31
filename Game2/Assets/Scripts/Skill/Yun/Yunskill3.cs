@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Yunskill3 : MonoBehaviour {
-    public bool Can_useSkill3;
+    public static bool Can_useSkill3;
+    public static bool UsingSkill3 {get; set;}
     public GameObject Yun;
 
 	// Use this for initialization
@@ -14,11 +15,13 @@ public class Yunskill3 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        Component g = new Component();
+
         if (this.tag == "Player1")
         {
             if (Can_useSkill3 == true)
             {
-                if (Input.GetKeyDown(KeyCode.E))
+                if (Input.GetKeyDown(KeyCode.Space))
                 {
                     StartCoroutine(Sk_time());
                 }
@@ -28,7 +31,7 @@ public class Yunskill3 : MonoBehaviour {
         {
             if (Can_useSkill3 == true)
             {
-                if (Input.GetKeyDown(KeyCode.L))
+                if (Input.GetKeyDown(KeyCode.Keypad0))
                 {
                     StartCoroutine(Sk_time());
                 }
@@ -39,11 +42,14 @@ public class Yunskill3 : MonoBehaviour {
     {
         gameObject.transform.GetChild(1).gameObject.SetActive(true);
         Can_useSkill3 = false;
-        yield return new WaitForSeconds(10);
+        UsingSkill3 = true;
+        yield return new WaitForSeconds(5);
         gameObject.transform.GetChild(1).gameObject.SetActive(false);
+        StartCoroutine("Sk_cooltime");
     }
     IEnumerator Sk_cooltime()
     {
+        UsingSkill3 = false;
         yield return new WaitForSeconds(30);
         Can_useSkill3 = true;
     }

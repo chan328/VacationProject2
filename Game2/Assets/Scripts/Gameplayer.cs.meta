@@ -3,7 +3,13 @@ guid: 75e3b3fcba411bf4b943651c2b0387fe
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - SHP1: {instanceID: 0}
+  - SHP2: {instanceID: 0}
+  - Yun: {fileID: 1690789231275602, guid: 279d31901b36f714694ff52c7af85f7f, type: 2}
+  - Git: {fileID: 1402341984046370, guid: d0b399434dd1f3940942c3a404ae9040, type: 2}
+  - Ho: {fileID: 1319080551747740, guid: d05442a59f096514491223dd01cfed41, type: 2}
+  - Chan: {fileID: 1493662942171640, guid: b86705831fafa2845b1874d9ff8e5cf9, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

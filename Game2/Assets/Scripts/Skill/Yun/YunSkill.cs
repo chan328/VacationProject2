@@ -22,7 +22,7 @@ public class YunSkill : MonoBehaviour {
         {
             if(this.tag == "Player1")
             {
-                if (Input.GetKeyDown(KeyCode.F))
+                if (Input.GetKeyDown(KeyCode.H))
                 {
                     spriteRan.sprite = Skill1;
                     skill1Effect.movePower = 3f;
@@ -32,7 +32,7 @@ public class YunSkill : MonoBehaviour {
             }
             if (this.tag == "Player2")
             {
-                if (Input.GetKeyDown(KeyCode.Slash))
+                if (Input.GetKeyDown(KeyCode.Keypad3))
                 {
                     spriteRan.sprite = Skill1;
                     skill1Effect.movePower = 3f;
