@@ -9,7 +9,6 @@ public class NormalAttack : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         Can_NormalAttack = true;
-        Yunskill3 yunskill3 = this.GetComponent<Yunskill3>();
 	}
 	
 	// Update is called once per frame

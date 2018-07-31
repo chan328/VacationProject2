@@ -74,6 +74,9 @@
     <Compile Include="Assets\Scripts\Skill\Git\GitSkill3.cs" />
     <Compile Include="Assets\Scripts\Skill\Git\Pilsal.cs" />
     <Compile Include="Assets\Scripts\Skill\Git\Spear.cs" />
+    <Compile Include="Assets\Scripts\Skill\Ho\HoAttack.cs" />
+    <Compile Include="Assets\Scripts\Skill\Ho\HoNoraml.cs" />
+    <Compile Include="Assets\Scripts\Skill\Ho\HoSkill1.cs" />
     <Compile Include="Assets\Scripts\Skill\Yun\Attack.cs" />
     <Compile Include="Assets\Scripts\Skill\Yun\NormalAttack.cs" />
     <Compile Include="Assets\Scripts\Skill\Yun\YunSkill.cs" />

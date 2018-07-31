@@ -15,7 +15,6 @@ public class Yunskill3 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Component g = new Component();
 
         if (this.tag == "Player1")
         {

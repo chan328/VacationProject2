@@ -17,7 +17,7 @@ Vector3 vec2 = new Vector3(2f,-1,-1);
 Quaternion qua = new Quaternion(0,0,0,0);
 	// Use this for initialization
 	void Start () {
-		player1 = 1;
+		player1 = 2;
 		player2 = 0;		 
 		HP1 = GameObject.Find("P1HP").GetComponent<Text>();
 		HP2 = GameObject.Find("P2HP").GetComponent<Text>();

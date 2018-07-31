@@ -5,12 +5,12 @@ using UnityEngine;
 public class GitSkill2 : MonoBehaviour {
     public bool CanUse_Skill2;
     public GameObject Rush;
-    Rigidbody2D RB;
+    //Rigidbody2D RB;
 	// Use this for initialization
 	void Start () {
 		Rush = transform.GetChild(1).gameObject;
-		RB = gameObject.GetComponent<Rigidbody2D>();
-		GitMove gitmove = this.GetComponent<GitMove>();
+		//RB = gameObject.GetComponent<Rigidbody2D>();
+		//GitMove gitmove = this.GetComponent<GitMove>();
         CanUse_Skill2 = true;
 	}
 	

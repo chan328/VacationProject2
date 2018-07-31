@@ -9,7 +9,7 @@ public class Yunskill2 : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         Can_useSkill2 = true;
-        Yunskill3 yunskill3 =this.GetComponent<Yunskill3>();
+        //Yunskill3 yunskill3 =this.GetComponent<Yunskill3>();
 	}
 	
 	// Update is called once per frame
