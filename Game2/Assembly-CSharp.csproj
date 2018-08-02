@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{8BF8F3C2-9201-845E-E2D6-7D1C2D02936D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -74,9 +75,13 @@
     <Compile Include="Assets\Scripts\Skill\Git\GitSkill3.cs" />
     <Compile Include="Assets\Scripts\Skill\Git\Pilsal.cs" />
     <Compile Include="Assets\Scripts\Skill\Git\Spear.cs" />
+    <Compile Include="Assets\Scripts\Skill\Ho\DestroyHo2.cs" />
+    <Compile Include="Assets\Scripts\Skill\Ho\DestroyHo3.cs" />
     <Compile Include="Assets\Scripts\Skill\Ho\HoAttack.cs" />
     <Compile Include="Assets\Scripts\Skill\Ho\HoNoraml.cs" />
     <Compile Include="Assets\Scripts\Skill\Ho\HoSkill1.cs" />
+    <Compile Include="Assets\Scripts\Skill\Ho\HoSkill2.cs" />
+    <Compile Include="Assets\Scripts\Skill\Ho\HoSkill3.cs" />
     <Compile Include="Assets\Scripts\Skill\Yun\Attack.cs" />
     <Compile Include="Assets\Scripts\Skill\Yun\NormalAttack.cs" />
     <Compile Include="Assets\Scripts\Skill\Yun\YunSkill.cs" />

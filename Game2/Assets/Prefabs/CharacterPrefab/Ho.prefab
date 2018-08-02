@@ -40,6 +40,9 @@ GameObject:
   - component: {fileID: 60385258008016174}
   - component: {fileID: 50557893259073870}
   - component: {fileID: 114552107691735768}
+  - component: {fileID: 114061273522857120}
+  - component: {fileID: 114171151344913176}
+  - component: {fileID: 114760873885926408}
   m_Layer: 0
   m_Name: Ho
   m_TagString: Untagged
@@ -125,6 +128,33 @@ PolygonCollider2D:
       - {x: 0.22999999, y: -0.24}
       - {x: 0.22999999, y: 0.22999999}
       - {x: 0.17999999, y: 0.24}
+--- !u!114 &114061273522857120
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1319080551747740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ca2b9d8be39fbc4f9337e22abdd3ec9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanUse_skill2: 0
+  Skill2: {fileID: 1810031547483526, guid: 8c7e91a34f8ac3b4e8ebe7323f553889, type: 2}
+--- !u!114 &114171151344913176
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1319080551747740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 766ea3608cb79514e98af1483ad86c1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enemy: {fileID: 0}
+  CanUseskill3: 0
+  Skill3: {fileID: 1271889442305124, guid: fae4c3553ba79864bb02fcc11374a01b, type: 2}
 --- !u!114 &114552107691735768
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -150,8 +180,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 929c1336971af7a488389c865cd5768d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Can_normalAttack: 0
   NormalAttack: {fileID: 1234796987945606, guid: 36a4ad2de699341419b3c594cc293a92,
     type: 2}
+--- !u!114 &114760873885926408
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1319080551747740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 244fd0f9d9a4c904c9fb3349c42d9ce9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanUseskill1: 0
+  Skill1: {fileID: 21300000, guid: 913f8b58ff707e54eb399f1d98248acd, type: 3}
+  ego: {fileID: 21300000, guid: 566ffbdc3afe2b046838d8d58884ed26, type: 3}
+  Weapon: {fileID: 1251956162562564}
 --- !u!212 &212316051193796348
 SpriteRenderer:
   m_ObjectHideFlags: 1
