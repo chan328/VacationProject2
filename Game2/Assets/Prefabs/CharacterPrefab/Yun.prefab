@@ -59,6 +59,7 @@ GameObject:
   - component: {fileID: 114527480752282484}
   - component: {fileID: 114995649644730786}
   - component: {fileID: 114618002241895454}
+  - component: {fileID: 114304133435186026}
   m_Layer: 0
   m_Name: Yun
   m_TagString: Untagged
@@ -175,6 +176,20 @@ MonoBehaviour:
   Skill1: {fileID: 21300000, guid: 9d9e0cedea9ef2447a85475865bef3ab, type: 3}
   Ego: {fileID: 21300000, guid: 2aa02798980d1c844b865134e7df8596, type: 3}
   skill1Effect: {fileID: 0}
+--- !u!114 &114304133435186026
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1690789231275602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74c2723217e0b74499d9f4fdfc3ae510, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movePower: 2
+  jumpPower: 3
+  isJumping: 0
 --- !u!114 &114397853765919712
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -186,7 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12b1b8960df56cd4288a0491186b0916, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Can_useSkill3: 0
+  Can_useSkill3: 1
   Yun: {fileID: 0}
 --- !u!114 &114527480752282484
 MonoBehaviour:
@@ -201,6 +216,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movePower: 2
   jumpPower: 3
+  StunNum: 0
+  stun: 0
   isJumping: 0
 --- !u!114 &114618002241895454
 MonoBehaviour:

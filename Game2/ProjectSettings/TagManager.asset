@@ -5,21 +5,37 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
-  - Ch1
-  - Ch2
-  - Ch3
-  - Ch4
   - Player1
   - Player2
-  - YunAttack
-  - YunSkill1
-  - YunAttack_2
-  - YunSkill_2
-  - Spear
+  - P1Yun0
+  - P1Yun1
+  - P2Yun0
+  - P2Yun1
+  - P1Git0
+  - P1Git1
+  - P1Git2
+  - P1Git3
+  - P2Git0
+  - P2Git1
+  - P2Git2
+  - P2Git3
+  - P1Ho0
+  - P1Ho1
+  - P1Ho2
+  - P2Ho0
+  - P2Ho1
+  - P2Ho2
+  - Portal1
+  - Portal2
   - Rush
-  - GitSkill_3
-  - GitAttack
-  - GitAttack_2
+  - P1Chan2
+  - P2Chan1
+  - P1Chan3
+  - P1Chan0
+  - P1Chan1
+  - P2Chan0
+  - P2Chan2
+  - P2Chan3
   layers:
   - Default
   - TransparentFX

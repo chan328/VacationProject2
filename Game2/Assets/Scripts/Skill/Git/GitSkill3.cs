@@ -15,24 +15,27 @@ public class GitSkill3 : MonoBehaviour {
 	void Update () {
         if(Can_Skill3 == true)
         {
-            if (this.tag == "Player2")
-            {
-                if (Input.GetKeyDown(KeyCode.Keypad0))
-                {
-                    StartCoroutine("shield");
-                    Instantiate(Skill3, this.transform.position, Quaternion.identity);
-                    StartCoroutine("Skill3_cooltime");
-                }
-            }
             if(this.tag == "Player1")
             {
                 if(Input.GetKeyDown(KeyCode.Space))
                 {
+                    Skill3.tag = "P1Git3";
                     StartCoroutine("shield");
                     Instantiate(Skill3, this.transform.position, Quaternion.identity);
                     StartCoroutine("Skill3_cooltime");
                 }
             }
+            
+            if (this.tag == "Player2")
+            {
+                if (Input.GetKeyDown(KeyCode.Keypad0))
+                {
+                    Skill3.tag = "P2Git3";
+                    StartCoroutine("shield");
+                    Instantiate(Skill3, this.transform.position, Quaternion.identity);
+                    StartCoroutine("Skill3_cooltime");
+                }
+            }            
         }
 	}
     IEnumerator shield()

@@ -47,7 +47,6 @@ public class CharMove : MonoBehaviour {
     public void Move2()
 	{
 		Vector3 movevelo = Vector3.zero;
-
             if(Input.GetKey(KeyCode.UpArrow))
             {
                 Jump();

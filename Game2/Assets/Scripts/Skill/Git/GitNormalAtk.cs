@@ -14,7 +14,7 @@ public class GitNormalAtk : MonoBehaviour {
 	void Update () {
 		if(this.tag == "Player1")
         {
-            GitAttack.tag = "GitAttack";
+            GitAttack.tag = "P1Git0";
             if(Input.GetKeyDown(KeyCode.F))
             {
                 if(Can_NormalAttack == true)
@@ -36,7 +36,7 @@ public class GitNormalAtk : MonoBehaviour {
         }
     else if(this.tag == "Player2")
         {
-            GitAttack.tag = "GitAttack_2";
+            GitAttack.tag = "P2Git0";
             if(Input.GetKeyDown(KeyCode.Keypad1))
             {
                 if(Can_NormalAttack == true)
@@ -57,23 +57,7 @@ public class GitNormalAtk : MonoBehaviour {
             }
         }
 	}
-
-    private void OnTriggerEnter2D(Collider2D other) {
-        if(this.tag == "Player1")
-        {
-            if(other.gameObject.tag == "GitAttack_2")
-            {
-                Gameplayer.HP1_ -= 10;
-            }
-        }
-        if(this.tag == "Player2")
-        {
-            if(other.gameObject.tag == "GitAttack")
-            {
-                Gameplayer.HP2_ -= 10;
-            }
-        }
-    }                                                        
+                                                        
     
     IEnumerator Normal()
     {

@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Yunskill3 : MonoBehaviour {
-    public static bool Can_useSkill3;
-    public static bool UsingSkill3 {get; set;}
+    public bool Can_useSkill3 = true;
+    public static bool P1UsingSkill3 { get; set; }
+    public static bool P2UsingSkill3 { get; set; }
     public GameObject Yun;
 
 	// Use this for initialization
 	void Start () {
         gameObject.transform.GetChild(1).gameObject.SetActive(false);
-        Can_useSkill3 = true;
+        P1UsingSkill3 = false;
+        P2UsingSkill3 = false;
 	}
 	
 	// Update is called once per frame
@@ -22,6 +24,7 @@ public class Yunskill3 : MonoBehaviour {
             {
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
+                    P1UsingSkill3 = true;
                     StartCoroutine(Sk_time());
                 }
             }
@@ -31,7 +34,8 @@ public class Yunskill3 : MonoBehaviour {
             if (Can_useSkill3 == true)
             {
                 if (Input.GetKeyDown(KeyCode.Keypad0))
-                {
+                {                    
+                    P2UsingSkill3 = true;
                     StartCoroutine(Sk_time());
                 }
             }
@@ -41,14 +45,20 @@ public class Yunskill3 : MonoBehaviour {
     {
         gameObject.transform.GetChild(1).gameObject.SetActive(true);
         Can_useSkill3 = false;
-        UsingSkill3 = true;
         yield return new WaitForSeconds(5);
         gameObject.transform.GetChild(1).gameObject.SetActive(false);
         StartCoroutine("Sk_cooltime");
     }
     IEnumerator Sk_cooltime()
     {
-        UsingSkill3 = false;
+        if(this.tag == "Player1")
+        {
+            P1UsingSkill3 = false;
+        }
+        else if(this.tag == "Player2")
+        {
+            P2UsingSkill3 = false;
+        }
         yield return new WaitForSeconds(30);
         Can_useSkill3 = true;
     }

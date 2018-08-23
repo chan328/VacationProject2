@@ -16,7 +16,7 @@ public class Yunskill2 : MonoBehaviour {
 	void Update () {
 		if(this.tag == "Player1")
         {
-            Attack.tag = "YunSkill1";
+            Attack.tag = "P1Yun1";
             if(Can_useSkill2 == true)
             {
                 if (Input.GetKeyDown(KeyCode.G))
@@ -38,7 +38,7 @@ public class Yunskill2 : MonoBehaviour {
         }
         else if(this.tag == "Player2")
         {
-            Attack.tag = "YunSkill_2";
+            Attack.tag = "P2Yun1";
             if(Can_useSkill2 == true)
             {
                 if (Input.GetKeyDown(KeyCode.Keypad2))
@@ -59,33 +59,7 @@ public class Yunskill2 : MonoBehaviour {
                 }
             }
         }
-	}
-    private void OnTriggerEnter2D(Collider2D other) {
-        if(this.tag == "Player1")
-        {
-            if(other.gameObject.tag == "YunSkill_2")
-            {
-                if(Yunskill3.UsingSkill3 == true)
-                {
-                    Gameplayer.HP1_ -= 30;
-                }
-                Gameplayer.HP1_-=15;
-            }
-            
-        }
-        if(this.tag == "Player2")
-        {
-            if(other.gameObject.tag == "YunSkill1")
-            {
-                if (Yunskill3.UsingSkill3 == true)
-                {
-                    Gameplayer.HP2_ -= 30;
-                }
-                else
-                    Gameplayer.HP2_ -= 15;
-            }
-        }
-    }                                                        
+	}                                       
     
     IEnumerator Sk2_time()
     {

@@ -18,6 +18,7 @@ public class HoSkill2 : MonoBehaviour {
             {
                 if (Input.GetKeyDown(KeyCode.G))
                 {
+                    Skill2.tag = "P1Ho1";
                     GameObject HoSkill2 = Instantiate(Skill2, this.gameObject.transform.position, Quaternion.identity);
                     StartCoroutine("HoSkill2_cool");
                 }
@@ -26,6 +27,7 @@ public class HoSkill2 : MonoBehaviour {
             {
                 if (Input.GetKeyDown(KeyCode.Keypad2))
                 {
+                    Skill2.tag = "P2Ho1";
                     GameObject HoSkill2 = Instantiate(Skill2, this.gameObject.transform.position, Quaternion.identity);
                     StartCoroutine("HoSkill2_cool");
                 }

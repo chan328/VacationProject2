@@ -257,7 +257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e594ef51bd0ce7e499b9262f4b256212, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skill1: {fileID: 1549351413217750, guid: 9f12d61dacecde048b763ee35686ff66, type: 2}
+  skill1: {fileID: 1083481102625732, guid: e81c1186608fc794c93b1c79994d4da5, type: 2}
   Canuse_Skill1: 0
 --- !u!114 &114465675480371710
 MonoBehaviour:
@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e7075f0184b4e34b8c02ac0511a8bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Skill3: {fileID: 1192375076824878, guid: 57d3433c75438994ba40def850f23c6d, type: 2}
+  Skill3: {fileID: 1816267897843414, guid: 3660d774c2fee3b4dbbe146229277689, type: 2}
   Can_Skill3: 0
 --- !u!114 &114592049643813294
 MonoBehaviour:
@@ -284,7 +284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Can_NormalAttack: 0
-  GitAttack: {fileID: 1018046404631730, guid: 609f61c9e22467f419b24391d656b2e5, type: 2}
+  GitAttack: {fileID: 1969026518860624, guid: d515cf66a16d6704486a992afde7ed4f, type: 2}
 --- !u!114 &114729223688275234
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -299,6 +299,8 @@ MonoBehaviour:
   movePower: 2
   jumpPower: 3
   isJumping: 0
+  StunNum: 0
+  stun: 0
 --- !u!114 &114820645861107532
 MonoBehaviour:
   m_ObjectHideFlags: 1

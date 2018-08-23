@@ -27,6 +27,8 @@ public class HoSkill3 : MonoBehaviour {
             {
                 if (Input.GetKeyDown(KeyCode.Space))
                 {
+                    Skill3.tag = "P1Ho2";
+                    StartCoroutine("Skill3_cool");
                     this.transform.position = Enemy.transform.position;
                     Instantiate(Skill3, this.transform.position, Quaternion.identity);
                 }
@@ -35,6 +37,8 @@ public class HoSkill3 : MonoBehaviour {
             {
                 if (Input.GetKeyDown(KeyCode.Keypad0))
                 {
+                    StartCoroutine("Skill3_cool");
+                    Skill3.tag = "P2Ho2";
                     this.transform.position = Enemy.transform.position;
                     Instantiate(Skill3, this.transform.position, Quaternion.identity);
                 }

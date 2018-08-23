@@ -8,13 +8,13 @@ public class HoSkill1 : MonoBehaviour {
     public Sprite Skill1;
     public Sprite ego;
     public GameObject Weapon;
-    private SpriteRenderer renderer;
+    private SpriteRenderer ren;
 
 	// Use this for initialization
 	void Start () {
         HoSkill1_on = false;
         CanUseskill1 = true;
-        renderer = Weapon.GetComponent<SpriteRenderer>();
+        ren = Weapon.GetComponent<SpriteRenderer>();
     }
 	
 	// Update is called once per frame
@@ -26,17 +26,16 @@ public class HoSkill1 : MonoBehaviour {
                 if(Input.GetKeyDown(KeyCode.H))
                 {
                     HoSkill1_on = true;
-                    renderer.sprite = Skill1;
-                    StartCoroutine("EffectofSkill1");
-                    
-                }
+                    ren.sprite = Skill1;
+                    StartCoroutine("EffectofSkill1");                   
+                }                
             }
             else if (this.tag == "Player2")
             {
                 if(Input.GetKeyDown(KeyCode.Keypad3))
                 {
                     HoSkill1_on = true;
-                    renderer.sprite = Skill1;
+                    ren.sprite = Skill1;
                     StartCoroutine("EffectofSkill1");
                 }
             }
@@ -44,11 +43,10 @@ public class HoSkill1 : MonoBehaviour {
 	}
 
     IEnumerator EffectofSkill1()
-    {
-        
+    {        
         CanUseskill1 = false;
-        yield return new WaitForSeconds(3);
-        renderer.sprite = ego;
+        yield return new WaitForSeconds(2);
+        ren.sprite = ego;
         HoSkill1_on = false;
         StartCoroutine("Skill1cool");
     }

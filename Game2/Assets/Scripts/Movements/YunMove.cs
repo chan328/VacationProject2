@@ -118,46 +118,24 @@ public class YunMove : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D other) {
         if(this.tag == "Player1")
         {
-            if(other.gameObject.tag == "Spear")
+            if(other.gameObject.tag == "P2Git1")
             {          
-                Gameplayer.HP1_-=10;
                 rig.AddForce(new Vector2(200 * other.gameObject.transform.localScale.x,0));
             }           
-            if(other.gameObject.tag == "GitSkill_3")
+            if(other.gameObject.tag == "P2Git2"||other.gameObject.tag == "P2Git3")
             {               
-                Gameplayer.HP1_ -= 25;
                 StartCoroutine("isStun");                             
-            }
-            if(other.gameObject.tag == "Rush")
-            {
-                Gameplayer.HP1_-=8;
-                StartCoroutine("isStun");
-            }
-            if(other.gameObject.tag == "GitAttack"||other.gameObject.tag == "GitAttack_2")
-            {         
-                Gameplayer.HP1_-=10;            
             }
         }
         else
         {
-            if(other.gameObject.tag == "Spear")
+            if(other.gameObject.tag == "P1Git1")
             {          
-                Gameplayer.HP2_-=10;
                 rig.AddForce(new Vector2(200 * other.gameObject.transform.localScale.x,0));
             }           
-            if(other.gameObject.tag == "GitSkill_3")
+            if(other.gameObject.tag == "P1Git2"|| other.gameObject.tag == "P1Git3")
             {                
-                Gameplayer.HP2_ -= 25;
                 StartCoroutine("isStun");                             
-            }
-            if(other.gameObject.tag == "Rush")
-            {
-                Gameplayer.HP2_-=8;
-                StartCoroutine("isStun");
-            }
-            if(other.gameObject.tag == "GitAttack")
-            {         
-                Gameplayer.HP2_-=10;            
             }
         }
     }

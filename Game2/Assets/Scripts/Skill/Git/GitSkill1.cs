@@ -19,6 +19,7 @@ public class GitSkill1 : MonoBehaviour {
             {
                 if (Input.GetKeyDown(KeyCode.G))
                 {
+                    skill1.tag = "P1Git1";
                     if (this.transform.localScale.x > 0)
                     {
                         GameObject skillone = Instantiate(skill1, this.transform.position, Quaternion.identity);
@@ -40,7 +41,7 @@ public class GitSkill1 : MonoBehaviour {
             {
                 if(Canuse_Skill1 == true)
                 {
-                    
+                    skill1.tag = "P2Git1";
                     if (this.transform.localScale.x > 0)
                     {
                         GameObject skillone = Instantiate(skill1, this.transform.position, Quaternion.identity);

@@ -8,8 +8,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <ProjectGuid>{8BF8F3C2-9201-845E-E2D6-7D1C2D02936D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -63,11 +62,16 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\ChooseChar.cs" />
     <Compile Include="Assets\Scripts\Gameplayer.cs" />
+    <Compile Include="Assets\Scripts\GetDamage.cs" />
+    <Compile Include="Assets\Scripts\Map\JumpTile.cs" />
+    <Compile Include="Assets\Scripts\Map\Portal.cs" />
     <Compile Include="Assets\Scripts\Movements\ChanMove.cs" />
     <Compile Include="Assets\Scripts\Movements\CharMove.cs" />
     <Compile Include="Assets\Scripts\Movements\GitMove.cs" />
     <Compile Include="Assets\Scripts\Movements\HoMove.cs" />
     <Compile Include="Assets\Scripts\Movements\YunMove.cs" />
+    <Compile Include="Assets\Scripts\Skill\Chan\ChanSKill2.cs" />
+    <Compile Include="Assets\Scripts\Skill\Chan\ChanSkill2Tag.cs" />
     <Compile Include="Assets\Scripts\Skill\Git\GitNormal.cs" />
     <Compile Include="Assets\Scripts\Skill\Git\GitNormalAtk.cs" />
     <Compile Include="Assets\Scripts\Skill\Git\GitSkill1.cs" />

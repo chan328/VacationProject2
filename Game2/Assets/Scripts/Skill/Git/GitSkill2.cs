@@ -22,6 +22,7 @@ public class GitSkill2 : MonoBehaviour {
             {
                 if (Input.GetKey(KeyCode.H))
                 {
+                    Rush.tag = "P1Git2";
                     StartCoroutine("rush");
                 }
             }
@@ -29,6 +30,7 @@ public class GitSkill2 : MonoBehaviour {
             {
                 if (Input.GetKey(KeyCode.Keypad3))
                 {
+                    Rush.tag = "P2Git2";
                     StartCoroutine("rush");
                 }
 

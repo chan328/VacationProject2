@@ -15,7 +15,7 @@ public class NormalAttack : MonoBehaviour {
 	void Update () {
 		if(this.tag == "Player1")
         {
-            Attack.tag = "YunAttack";
+            Attack.tag = "P1Yun0";
             if(Input.GetKeyDown(KeyCode.F))
             {
                 if(Can_NormalAttack == true)
@@ -37,7 +37,7 @@ public class NormalAttack : MonoBehaviour {
         }
     else if(this.tag == "Player2")
         {
-            Attack.tag = "YunAttack_2";
+            Attack.tag = "P2Yun0";
             if(Input.GetKeyDown(KeyCode.Keypad1))
             {
                 if(Can_NormalAttack == true)
@@ -58,33 +58,7 @@ public class NormalAttack : MonoBehaviour {
             }
         }
 	}
-
-    private void OnTriggerEnter2D(Collider2D other) {
-        if(this.tag == "Player1")
-        {
-            if(other.gameObject.tag == "YunAttack_2")
-            {
-                if(Yunskill3.UsingSkill3 == true)
-                {
-                    Gameplayer.HP1_ -= 20;
-                }
-                else
-                Gameplayer.HP1_ -= 10;
-            }
-        }
-        if(this.tag == "Player2")
-        {
-            if(other.gameObject.tag == "YunAttack")
-            {
-                if (Yunskill3.UsingSkill3 == true)
-                {
-                    Gameplayer.HP2_ -= 20;
-                }
-                else
-                Gameplayer.HP2_ -= 10;
-            }
-        }
-    }                                                        
+                                                      
     
     IEnumerator Normal()
     {
