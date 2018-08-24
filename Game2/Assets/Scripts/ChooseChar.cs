@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class ChooseChar : MonoBehaviour {
     public int[] charnum;
     public bool Second;
@@ -13,16 +14,14 @@ public class ChooseChar : MonoBehaviour {
 
     void Start()
     {
+        DontDestroyOnLoad(gameObject);
         Second = false;
         End = false;
     }
     // Update is called once per frame
     void Update ()
     {
-        if(SecondChar != 0)
-        {
-            SceneManager.LoadScene("Test");
-        }
+        
 	}
 
     public void OnClick(int num)
@@ -34,6 +33,9 @@ public class ChooseChar : MonoBehaviour {
     {
         SecondChar = num;
         End = true;
+        
+        SceneManager.LoadScene("Temple");
+        
     }
 
     public void Test(int num)

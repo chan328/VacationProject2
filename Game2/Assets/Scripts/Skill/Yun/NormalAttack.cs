@@ -63,7 +63,7 @@ public class NormalAttack : MonoBehaviour {
     IEnumerator Normal()
     {
         Can_NormalAttack = false;
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.4f);
         Can_NormalAttack = true;
     }
 }

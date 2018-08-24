@@ -6,18 +6,19 @@ public class ChanSkill2Tag : MonoBehaviour {
     public GameObject Player;
 	// Use this for initialization
 	void Start () {
-        Player = transform.parent.gameObject;
+        
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        Player = transform.parent.gameObject;
         if(Player.tag == "Player1")
         {
-            tag = "P1ChanSkill2";
+            tag = "P1Chan2";
         }
         else if(Player.tag == "Player2")
         {
-            tag = "P2ChanSkill2";
+            tag = "P2Chan2";
         }
 	}
 }

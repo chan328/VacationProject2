@@ -14,21 +14,23 @@ public class ChanSKill2 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        this.transform.Rotate(0, 0, -5);
+        transform.Rotate(0, 0, -5,Space.World);
         if(Canuse == true)
         {
             if (Player.tag == "Player1")
             {
-                if (Input.GetKeyDown(KeyCode.G))
+                if (Input.GetKeyDown(KeyCode.H))
                 {
+                    gameObject.tag = "Player1";
                     transform.GetChild(0).gameObject.SetActive(true);
                     StartCoroutine("Skiil2");
                 }
             }
             else if (Player.tag == "Player2")
             {
-                if (Input.GetKeyDown(KeyCode.Keypad2))
+                if (Input.GetKeyDown(KeyCode.Keypad3))
                 {
+                    gameObject.tag = "Player2";
                     transform.GetChild(0).gameObject.SetActive(true);
                     StartCoroutine("Skiil2");
                 }

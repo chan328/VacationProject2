@@ -108,7 +108,19 @@ Rigidbody2D gitrig;
                         }
                         else
                             Gameplayer.HP1_ -= 10;
-                        break;               
+                        break;   
+                    case "P2Chan0":
+                        Gameplayer.HP1_-=20;
+                        break;
+                    case "P2Chan1":
+                        Gameplayer.HP1_ -= 20;
+                        break;
+                    case "P2Chan2":
+                        Gameplayer.HP1_ -= 10;
+                        break;   
+                    case "P2Chan3":
+                        Gameplayer.HP1_ -= 30;
+                        break;         
                 }
             }
             else if (this.tag == "Player2")
@@ -156,9 +168,23 @@ Rigidbody2D gitrig;
                         break;
                     case "P1Ho2":
                         Gameplayer.HP2_ -= 20;
-                        break;                              
+                        break;    
+                    case "P1Chan0":
+                        Gameplayer.HP2_-=20;
+                        break;
+                    case "P1Chan1":
+                        Gameplayer.HP2_ -= 10;
+                        break;
+                    case "P1Chan2":
+                        Gameplayer.HP2_ -= 10;
+                        break;
+                    case "P1Chan3":
+                        Gameplayer.HP2_ -= 30;
+                        break;                                         
                 }
             }
+        if(other.tag !="Ground"&&other.tag !="Player1"&&other.tag !="Player2"&&other.tag!="P1Git2"&&other.tag!="P2Git2"&&other.tag!="P1Chan2"&&other.tag!="P2Chan2")
+        other.tag = "Untagged";
         }
     }
     IEnumerator isStun()

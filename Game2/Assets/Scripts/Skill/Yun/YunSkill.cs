@@ -9,6 +9,7 @@ public class YunSkill : MonoBehaviour {
     public Sprite Ego;
     public YunMove skill1Effect;
     private SpriteRenderer spriteRan;
+    public AudioSource a;
 	// Use this for initialization
 	void Start () {
         can_useSkill1 = true;
@@ -24,6 +25,7 @@ public class YunSkill : MonoBehaviour {
             {
                 if (Input.GetKeyDown(KeyCode.H))
                 {
+                    a.Play();
                     spriteRan.sprite = Skill1;
                     skill1Effect.movePower = 3f;
                     skill1Effect.jumpPower = 5f;
@@ -34,6 +36,7 @@ public class YunSkill : MonoBehaviour {
             {
                 if (Input.GetKeyDown(KeyCode.Keypad3))
                 {
+                    a.Play();
                     spriteRan.sprite = Skill1;
                     skill1Effect.movePower = 3f;
                     skill1Effect.jumpPower = 5f;

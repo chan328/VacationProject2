@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Prefabs\CharacterPrefab\Sp.cs" />
     <Compile Include="Assets\Scripts\ChooseChar.cs" />
     <Compile Include="Assets\Scripts\Gameplayer.cs" />
     <Compile Include="Assets\Scripts\GetDamage.cs" />
@@ -70,8 +71,14 @@
     <Compile Include="Assets\Scripts\Movements\GitMove.cs" />
     <Compile Include="Assets\Scripts\Movements\HoMove.cs" />
     <Compile Include="Assets\Scripts\Movements\YunMove.cs" />
+    <Compile Include="Assets\Scripts\Skill\Chan\ChanNormalAttack.cs" />
+    <Compile Include="Assets\Scripts\Skill\Chan\ChanSkill1.cs" />
+    <Compile Include="Assets\Scripts\Skill\Chan\ChanSkill1Use.cs" />
     <Compile Include="Assets\Scripts\Skill\Chan\ChanSKill2.cs" />
     <Compile Include="Assets\Scripts\Skill\Chan\ChanSkill2Tag.cs" />
+    <Compile Include="Assets\Scripts\Skill\Chan\ChanSkill3.cs" />
+    <Compile Include="Assets\Scripts\Skill\Chan\NormalSkill.cs" />
+    <Compile Include="Assets\Scripts\Skill\Chan\Skill3Del.cs" />
     <Compile Include="Assets\Scripts\Skill\Git\GitNormal.cs" />
     <Compile Include="Assets\Scripts\Skill\Git\GitNormalAtk.cs" />
     <Compile Include="Assets\Scripts\Skill\Git\GitSkill1.cs" />

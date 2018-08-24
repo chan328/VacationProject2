@@ -50,8 +50,7 @@ public class Yunskill2 : MonoBehaviour {
                         StartCoroutine("Sk2_time");
                     }
                     else
-                    {
-                        
+                    {                       
                         GameObject attack = Instantiate(Attack, this.transform.position + new Vector3(-1f, 0, -1), new Quaternion(0, 0, 0, 0));
                         attack.transform.localScale = new Vector3(-2, 2, 0);
                         StartCoroutine("Sk2_time");

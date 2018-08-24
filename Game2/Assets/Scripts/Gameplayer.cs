@@ -13,12 +13,12 @@ public static int HP2_ {get; set;}
 Text HP1;
 Text HP2;
 Vector3 vec1 = new Vector3(-1.5f,-1,-1);
-Vector3 vec2 = new Vector3(2f,-1,-1);   
+Vector3 vec2 = new Vector3(1.5f,-1,-1);   
 Quaternion qua = new Quaternion(0,0,0,0);
 	// Use this for initialization
 	void Start () {
-		player1 = 0;
-		player2 = 3;		 
+		player1 = 1;
+		player2 = 0;		 
 		HP1 = GameObject.Find("P1HP").GetComponent<Text>();
 		HP2 = GameObject.Find("P2HP").GetComponent<Text>();
 		if(player1 == 0)

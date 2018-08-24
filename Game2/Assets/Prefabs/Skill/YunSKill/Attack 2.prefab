@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 82035324184763880}
   m_Layer: 0
   m_Name: Attack 2
-  m_TagString: P1Yun1
+  m_TagString: P2Yun1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -188,7 +188,7 @@ Animator:
   m_GameObject: {fileID: 1297054057321592}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2c81afdd45800f14db787a27a57b0e82, type: 2}
+  m_Controller: {fileID: 9100000, guid: 63a6d3c6c10ce32469562f70b9f8bab0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
