@@ -2716,6 +2716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75e3b3fcba411bf4b943651c2b0387fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ChooseCharacter: {fileID: 0}
   SHP1: {fileID: 1542324722}
   SHP2: {fileID: 683332431}
   Yun: {fileID: 1690789231275602, guid: 279d31901b36f714694ff52c7af85f7f, type: 2}

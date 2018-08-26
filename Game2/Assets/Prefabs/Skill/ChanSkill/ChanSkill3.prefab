@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 61753772368122794}
   m_Layer: 0
   m_Name: ChanSkill3
-  m_TagString: P2Chan3
+  m_TagString: P1Chan3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

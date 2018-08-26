@@ -11,6 +11,6 @@ public class Sp : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        this.transform.position = transform.parent.position;
+        this.transform.position = transform.parent.position-new Vector3(0,0,1);
 	}
 }

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ChanNormalAttack : MonoBehaviour {
-    public GameObject Attack;
-    public bool CanAttack;
     public GameObject Player;
+    public GameObject Skill0;
+    bool CanAttack;   
 	// Use this for initialization
 	void Start () {
         Player = this.gameObject;
@@ -18,19 +18,19 @@ public class ChanNormalAttack : MonoBehaviour {
         {
             if (Player.gameObject.tag == "Player1")
             {
+                Skill0.tag = "P1Chan0";
                 if(Input.GetKeyDown(KeyCode.F))
                 {
-                    Attack.tag = "P1Chan0";
-                    if(this.transform.localScale.x > 0)
-                    {                    
-                        GameObject attack = Instantiate(Attack, this.transform.position + new Vector3(0.4f, 0.18f, -1), Quaternion.identity);
-                        attack.transform.localScale = new Vector3(1, 1, 0);
+                    if(Player.transform.localScale.x > 0)
+                    {                                           
+                        GameObject attack = Instantiate(Skill0, this.transform.position + new Vector3(0.5f, 0.18f, -1), Quaternion.identity);
+                        attack.transform.localScale = new Vector3(0.8f, 0.8f, 0);
                         StartCoroutine("Normal");
                     }
-                    else if(this.transform.localScale.x < 0)
+                    else if(Player.transform.localScale.x < 0)
                     {
-                        GameObject attack = Instantiate(Attack, this.transform.position + new Vector3(-0.4f, 0.18f, -1), Quaternion.identity);
-                        attack.transform.localScale = new Vector3(-1, 1, 0);
+                        GameObject attack = Instantiate(Skill0, this.transform.position + new Vector3(-0.5f, 0.18f, -1), Quaternion.identity);
+                        attack.transform.localScale = new Vector3(-0.8f, 0.8f, 0);
                         StartCoroutine("Normal");
                     }
                 }
@@ -39,16 +39,16 @@ public class ChanNormalAttack : MonoBehaviour {
             {
                 if(Input.GetKeyDown(KeyCode.Keypad1))
                 {
-                    Attack.tag = "P2Chan0";
-                    if (this.transform.localScale.x > 0)
+                    Skill0.tag = "P2Chan0";
+                    if (Player.transform.localScale.x > 0)
                     {                       
-                        GameObject attack = Instantiate(Attack, this.transform.position + new Vector3(0.4f, 0.18f, -1), Quaternion.identity);
+                        GameObject attack = Instantiate(Skill0, this.transform.position + new Vector3(0.5f, 0.18f, -1), Quaternion.identity);
                         attack.transform.localScale = new Vector3(0.8f, 0.8f, 0);
                         StartCoroutine("Normal");
                     }
-                    else if (this.transform.localScale.x < 0)
+                    else if (Player.transform.localScale.x < 0)
                     {
-                        GameObject attack = Instantiate(Attack, this.transform.position + new Vector3(-0.4f, 0.18f, -1), Quaternion.identity);
+                        GameObject attack = Instantiate(Skill0, this.transform.position + new Vector3(-0.5f, 0.18f, -1), Quaternion.identity);
                         attack.transform.localScale = new Vector3(-0.8f, 0.8f, 0);
                         StartCoroutine("Normal");
                     }

@@ -34,7 +34,7 @@ public class ChooseChar : MonoBehaviour {
         SecondChar = num;
         End = true;
         
-        SceneManager.LoadScene("Temple");
+        SceneManager.LoadScene("StageSelect");
         
     }
 

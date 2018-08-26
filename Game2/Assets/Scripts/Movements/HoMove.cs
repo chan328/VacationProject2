@@ -4,44 +4,32 @@ using UnityEngine;
 
 public class HoMove : CharMove {
 public Rigidbody2D RB;
-public static int HP_2{get; set;}
-int a;
 public bool stun;
+public bool Chanstun;
+public bool Chanstun3;
     void Start()
     {
         RB = GetComponent<Rigidbody2D>();
-        if(transform.position.x == -1.5f)
-        a = 1;
-        if(transform.position.x == 2f)
-        a = 2;
-        HP_2 = 150; 
         Gameplayer.player2 =1;   
     }
 
     void FixedUpdate()
     {
-        if(stun == false)
+        if(stun == false&&Chanstun == false&&Chanstun3 == false)
         {
-            if(a==1)
+            if(gameObject.tag == "Player1")
             {
                 base.Move();
             }      
-            if(a==2)
+            if(gameObject.tag == "Player2")
             {
                 base.Move2();
             }
         }               
-        if(transform.position.y<-10)
-        {
-            HP_2 -= 20;
-            transform.position = new Vector3(0,0,0);
-        }
     }
 
     void Update()
     {
-        if(HP_2<=0)
-        Destroy(gameObject);
     }
     private void OnTriggerEnter2D(Collider2D other) {
         if(this.tag == "Player1")
@@ -54,6 +42,14 @@ public bool stun;
             {               
                 StartCoroutine("isStun");                             
             }
+            if(other.gameObject.tag == "P2Chan1")
+            {
+                StartCoroutine("isChanStun");
+            }
+            if(other.gameObject.tag == "P2Chan3")
+            {
+                StartCoroutine("isChanskill3Stun");
+            }
         }
         else
         {
@@ -64,6 +60,14 @@ public bool stun;
             if(other.gameObject.tag == "P1Git2"|| other.gameObject.tag == "P1Git3")
             {                
                 StartCoroutine("isStun");                             
+            }
+            if(other.gameObject.tag == "P1Chan1")
+            {
+                StartCoroutine("isChanStun");
+            }
+            if(other.gameObject.tag == "P1Chan3")
+            {
+                StartCoroutine("isChanskill3Stun");
             }
         }
     }
@@ -79,5 +83,17 @@ public bool stun;
         stun = true;
         yield return new WaitForSeconds(0.5f);
         stun = false;
+    }
+    IEnumerator isChanStun()
+    {
+        Chanstun = true;
+        yield return new WaitForSeconds(1f);
+        Chanstun = false;
+    }
+    IEnumerator isChanskill3Stun()
+    {
+        Chanstun3 = true;
+        yield return new WaitForSeconds(1.5f);
+        Chanstun3 = false;
     }
 }

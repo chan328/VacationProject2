@@ -23,9 +23,10 @@ GameObject:
   - component: {fileID: 95543551105940752}
   - component: {fileID: 114230241243658596}
   - component: {fileID: 60984401279613478}
+  - component: {fileID: 114823867317691308}
   m_Layer: 0
   m_Name: ChanNormal
-  m_TagString: P2Chan0
+  m_TagString: P1Chan0
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,6 +113,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd846d79c4c9ef94297b2640afdd6083, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114823867317691308
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1125479059826672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52e0dd81e695f49488d2031639d7a7b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Chan: {fileID: 0}
 --- !u!212 &212789774263823122
 SpriteRenderer:
   m_ObjectHideFlags: 1

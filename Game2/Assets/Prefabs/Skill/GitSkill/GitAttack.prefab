@@ -23,9 +23,10 @@ GameObject:
   - component: {fileID: 95365166842480772}
   - component: {fileID: 114678328677454504}
   - component: {fileID: 60478421110293384}
+  - component: {fileID: 114026825939198644}
   m_Layer: 0
   m_Name: GitAttack
-  m_TagString: P1Git0
+  m_TagString: P2Git0
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -93,6 +94,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114026825939198644
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1969026518860624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eaac03413f48434a88e91dd82d19584, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Git: {fileID: 0}
 --- !u!114 &114678328677454504
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -243,9 +243,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc3d2f01126199c4288ab9842091ff07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Attack: {fileID: 1125479059826672, guid: 8b52a409edf26d4458f8ad24a88249a5, type: 2}
-  CanAttack: 0
   Player: {fileID: 0}
+  Skill0: {fileID: 1125479059826672, guid: 8b52a409edf26d4458f8ad24a88249a5, type: 2}
 --- !u!114 &114572659510414754
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -260,6 +259,10 @@ MonoBehaviour:
   movePower: 2
   jumpPower: 3
   isJumping: 1
+  chRB: {fileID: 50387231560673928}
+  stun: 0
+  Chanstun: 0
+  Chanstun3: 0
 --- !u!114 &114619172398227378
 MonoBehaviour:
   m_ObjectHideFlags: 1

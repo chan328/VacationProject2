@@ -27,13 +27,13 @@ public class HoNoraml : MonoBehaviour {
                     NormalAttack.tag = "P1Ho0";
                     if (this.transform.localScale.x > 0)
                     {
-                        GameObject Normal = Instantiate(NormalAttack, this.transform.position + new Vector3(0.7f, 0, -1), Quaternion.identity);
+                        GameObject Normal = Instantiate(NormalAttack, this.transform.position + new Vector3(0.8f, 0, -1), Quaternion.identity);
                         Normal.transform.localScale = new Vector3(1.7f, 0.7f, 0);
                         StartCoroutine("HoNormalAttack");
                     }
                     else
                     {
-                        GameObject Normal = Instantiate(NormalAttack, this.transform.position + new Vector3(-0.7f, 0, -1), Quaternion.identity);
+                        GameObject Normal = Instantiate(NormalAttack, this.transform.position + new Vector3(-0.8f, 0, -1), Quaternion.identity);
                         Normal.transform.localScale = new Vector3(-1.7f, 0.7f, 0);
                         StartCoroutine("HoNormalAttack");
                     }
@@ -46,13 +46,13 @@ public class HoNoraml : MonoBehaviour {
                     NormalAttack.tag = "P2Ho0";
                     if (this.transform.localScale.x > 0)
                     {
-                        GameObject Normal = Instantiate(NormalAttack, this.transform.position + new Vector3(0.6f, 0, -1), Quaternion.identity);
+                        GameObject Normal = Instantiate(NormalAttack, this.transform.position + new Vector3(0.8f, 0, -1), Quaternion.identity);
                         Normal.transform.localScale = new Vector3(1.7f, 0.7f, 0);
                         StartCoroutine("HoNormalAttack");
                     }
                     else
                     {
-                        GameObject Normal = Instantiate(NormalAttack, this.transform.position + new Vector3(-0.6f, 0, -1), Quaternion.identity);
+                        GameObject Normal = Instantiate(NormalAttack, this.transform.position + new Vector3(-0.8f, 0, -1), Quaternion.identity);
                         Normal.transform.localScale = new Vector3(-1.7f, 0.7f, 0);
                         StartCoroutine("HoNormalAttack");
                     }

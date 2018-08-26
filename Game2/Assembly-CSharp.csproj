@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\Prefabs\CharacterPrefab\Sp.cs" />
     <Compile Include="Assets\Scripts\ChooseChar.cs" />
+    <Compile Include="Assets\Scripts\ChooseStage.cs" />
     <Compile Include="Assets\Scripts\Gameplayer.cs" />
     <Compile Include="Assets\Scripts\GetDamage.cs" />
     <Compile Include="Assets\Scripts\Map\JumpTile.cs" />
@@ -70,7 +71,10 @@
     <Compile Include="Assets\Scripts\Movements\CharMove.cs" />
     <Compile Include="Assets\Scripts\Movements\GitMove.cs" />
     <Compile Include="Assets\Scripts\Movements\HoMove.cs" />
+    <Compile Include="Assets\Scripts\Movements\UhMove.cs" />
     <Compile Include="Assets\Scripts\Movements\YunMove.cs" />
+    <Compile Include="Assets\Scripts\Skill\Chan\ChanChase.cs" />
+    <Compile Include="Assets\Scripts\Skill\Chan\ChanChase2.cs" />
     <Compile Include="Assets\Scripts\Skill\Chan\ChanNormalAttack.cs" />
     <Compile Include="Assets\Scripts\Skill\Chan\ChanSkill1.cs" />
     <Compile Include="Assets\Scripts\Skill\Chan\ChanSkill1Use.cs" />
@@ -79,6 +83,7 @@
     <Compile Include="Assets\Scripts\Skill\Chan\ChanSkill3.cs" />
     <Compile Include="Assets\Scripts\Skill\Chan\NormalSkill.cs" />
     <Compile Include="Assets\Scripts\Skill\Chan\Skill3Del.cs" />
+    <Compile Include="Assets\Scripts\Skill\Git\GitChase.cs" />
     <Compile Include="Assets\Scripts\Skill\Git\GitNormal.cs" />
     <Compile Include="Assets\Scripts\Skill\Git\GitNormalAtk.cs" />
     <Compile Include="Assets\Scripts\Skill\Git\GitSkill1.cs" />
@@ -89,26 +94,30 @@
     <Compile Include="Assets\Scripts\Skill\Ho\DestroyHo2.cs" />
     <Compile Include="Assets\Scripts\Skill\Ho\DestroyHo3.cs" />
     <Compile Include="Assets\Scripts\Skill\Ho\HoAttack.cs" />
+    <Compile Include="Assets\Scripts\Skill\Ho\HoChase.cs" />
     <Compile Include="Assets\Scripts\Skill\Ho\HoNoraml.cs" />
     <Compile Include="Assets\Scripts\Skill\Ho\HoSkill1.cs" />
     <Compile Include="Assets\Scripts\Skill\Ho\HoSkill2.cs" />
     <Compile Include="Assets\Scripts\Skill\Ho\HoSkill3.cs" />
+    <Compile Include="Assets\Scripts\Skill\Uh\Skill3.cs" />
+    <Compile Include="Assets\Scripts\Skill\Uh\UhSkill3.cs" />
     <Compile Include="Assets\Scripts\Skill\Yun\Attack.cs" />
+    <Compile Include="Assets\Scripts\Skill\Yun\ChaseYun.cs" />
     <Compile Include="Assets\Scripts\Skill\Yun\NormalAttack.cs" />
     <Compile Include="Assets\Scripts\Skill\Yun\YunSkill.cs" />
     <Compile Include="Assets\Scripts\Skill\Yun\Yunskill2.cs" />
     <Compile Include="Assets\Scripts\Skill\Yun\Yunskill3.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/chan328/Documents/Game2/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/chan328/Desktop/asf/Game2/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/chan328/Documents/Game2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/chan328/Desktop/asf/Game2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/chan328/Documents/Game2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/chan328/Desktop/asf/Game2/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/chan328/Documents/Game2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/chan328/Desktop/asf/Game2/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

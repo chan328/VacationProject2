@@ -20,17 +20,18 @@ public class ChanSkill1Use : MonoBehaviour {
             {
                 if(Input.GetKeyDown(KeyCode.G))
                 {
+                    Skill1.tag = "P1Chan1";
                     if(Player.transform.localScale.x > 0)
                     {
                         GameObject attack = Instantiate(Skill1, this.transform.position + new Vector3(0.5f, 0.18f, -1), Quaternion.identity);
                         attack.transform.localScale = new Vector3(0.8f, 0.8f, 0);
-                        StartCoroutine("Normal");
+                        StartCoroutine("Skill2cooltime");
                     }
                     else if(Player.transform.localScale.x < 0)
                     {
                         GameObject attack = Instantiate(Skill1, this.transform.position + new Vector3(-0.5f, 0.18f, -1), Quaternion.identity);
                         attack.transform.localScale = new Vector3(-0.8f, 0.8f, 0);
-                        StartCoroutine("Normal");
+                        StartCoroutine("Skill2cooltime");
                     }
                 }
             }
@@ -38,6 +39,7 @@ public class ChanSkill1Use : MonoBehaviour {
             {
                 if(Input.GetKeyDown(KeyCode.Keypad2))
                 {
+                    Skill1.tag = "P2Chan1";
                     if (Player.transform.localScale.x > 0)
                     {
                         GameObject attack = Instantiate(Skill1, this.transform.position + new Vector3(0.5f, 0.18f, -1), Quaternion.identity);

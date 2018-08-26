@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class GitMove : CharMove {
 public static bool Shield {get; set;}
-public static int HP_1{get; set;}
 public int StunNum;
 public bool stun;
+public bool Chanstun;
+public bool Chanstun3;
 Rigidbody2D gitrig;
     void Start()
     {
+        Chanstun = false;
         stun = false;
         gitrig = GetComponent<Rigidbody2D>();
         Shield = false;       
@@ -17,7 +19,7 @@ Rigidbody2D gitrig;
 
     void FixedUpdate()
     {
-        if(stun == false)
+        if(stun == false&&Chanstun == false&&Chanstun3 == false)
         {
             if(this.tag == "Player1")
             base.Move();
@@ -48,6 +50,14 @@ Rigidbody2D gitrig;
             {               
                 StartCoroutine("isStun");                             
             }
+            if(other.gameObject.tag == "P2Chan1")
+            {
+                StartCoroutine("isChanStun");
+            }
+            if(other.gameObject.tag == "P2Chan3")
+            {
+                StartCoroutine("isChanskill3Stun");
+            }
         }
         else
         {
@@ -58,6 +68,14 @@ Rigidbody2D gitrig;
             if(other.gameObject.tag == "P1Git2"|| other.gameObject.tag == "P1Git3")
             {                
                 StartCoroutine("isStun");                             
+            }
+            if(other.gameObject.tag == "P1Chan1")
+            {
+                StartCoroutine("isChanStun");
+            }
+            if(other.gameObject.tag == "P1Chan3")
+            {
+                StartCoroutine("isChanskill3Stun");
             }
         }
 
@@ -183,8 +201,9 @@ Rigidbody2D gitrig;
                         break;                                         
                 }
             }
-        if(other.tag !="Ground"&&other.tag !="Player1"&&other.tag !="Player2"&&other.tag!="P1Git2"&&other.tag!="P2Git2"&&other.tag!="P1Chan2"&&other.tag!="P2Chan2")
-        other.tag = "Untagged";
+        if(other.tag !="Ground"&&other.tag !="Player1"&&other.tag !="Player2"&&other.tag!="P1Git2"&&other.tag!="P2Git2"&&other.tag!="P1Chan2"&&other.tag!="P2Chan2" &&other.tag!="Portal1" &&other.tag !="Portal2"
+        &&other.tag !="P1Git1"&&other.tag !="P2Git1"&&other.tag!="P1Ho2"&&other.tag!="P2Ho2")
+            other.tag = "Untagged";
         }
     }
     IEnumerator isStun()
@@ -193,5 +212,16 @@ Rigidbody2D gitrig;
         yield return new WaitForSeconds(0.5f);
         stun = false;
     }
-    
+    IEnumerator isChanStun()
+    {
+        Chanstun = true;
+        yield return new WaitForSeconds(1f);
+        Chanstun = false;
+    }
+    IEnumerator isChanskill3Stun()
+    {
+        Chanstun3 = true;
+        yield return new WaitForSeconds(1.5f);
+        Chanstun3 = false;
+    }
 }

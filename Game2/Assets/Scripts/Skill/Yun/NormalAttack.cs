@@ -22,13 +22,13 @@ public class NormalAttack : MonoBehaviour {
                 {
                     if (this.transform.localScale.x > 0)
                     {
-                        GameObject attack = Instantiate(Attack, this.transform.position + new Vector3(0.5f, 0, -1), Quaternion.identity);
+                        GameObject attack = Instantiate(Attack, this.transform.position + new Vector3(0.6f, 0, -1), Quaternion.identity);
                         attack.transform.localScale = new Vector3(1, 1, 0);
                         StartCoroutine("Normal");
                     }
                     else
                     {
-                        GameObject attack = Instantiate(Attack, this.transform.position + new Vector3(-0.5f, 0, -1), Quaternion.identity);
+                        GameObject attack = Instantiate(Attack, this.transform.position + new Vector3(-0.6f, 0, -1), Quaternion.identity);
                         attack.transform.localScale = new Vector3(-1, 1, 0);
                         StartCoroutine("Normal");
                     }
@@ -44,13 +44,13 @@ public class NormalAttack : MonoBehaviour {
                 {
                     if (this.transform.localScale.x > 0)
                     {
-                        GameObject attack = Instantiate(Attack, this.transform.position + new Vector3(0.5f, 0, -1), Quaternion.identity);
+                        GameObject attack = Instantiate(Attack, this.transform.position + new Vector3(0.6f, 0, -1), Quaternion.identity);
                         attack.transform.localScale = new Vector3(1, 1, 0);
                         StartCoroutine("Normal");
                     }
                     else
                     {
-                        GameObject attack = Instantiate(Attack, this.transform.position + new Vector3(-0.5f, 0, -1), Quaternion.identity);
+                        GameObject attack = Instantiate(Attack, this.transform.position + new Vector3(-0.6f, 0, -1), Quaternion.identity);
                         attack.transform.localScale = new Vector3(-1, 1, 0);
                         StartCoroutine("Normal");
                     }

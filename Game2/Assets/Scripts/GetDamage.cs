@@ -27,6 +27,14 @@ public class GetDamage : CharMove {
                 Destroy(GameObject.FindGameObjectWithTag("Player2"));
             }
         }
+        if(transform.position.y<-10)
+        {
+            if(this.tag == "Player1")
+            Gameplayer.HP1_-=20;
+            else
+            Gameplayer.HP2_-=20;
+            transform.position = new Vector3(0,0,0);
+        }
     }
 
     // Update is called once per frame
@@ -87,7 +95,7 @@ public class GetDamage : CharMove {
                 case "P2Chan1":
                     Gameplayer.HP1_ -= 20;
                     break;
-                case "P2Chan2":
+                case "P2Chan2":                 
                     Gameplayer.HP1_ -= 10;
                     break;   
                 case "P2Chan3":
@@ -141,11 +149,11 @@ public class GetDamage : CharMove {
                 case "P1Ho2":
                     Gameplayer.HP2_ -= 20;
                     break;    
-                case "P1Chan0":
+                case "P1Chan0": 
                     Gameplayer.HP2_-=20;
                     break;
                 case "P1Chan1":
-                    Gameplayer.HP2_ -= 10;
+                    Gameplayer.HP2_ -= 20;
                     break;
                 case "P1Chan2":
                     Gameplayer.HP2_ -= 10;
@@ -155,7 +163,21 @@ public class GetDamage : CharMove {
                     break;                                         
             }
         }
-        if(other.tag !="Ground"&&other.tag !="Player1"&&other.tag !="Player2"&&other.tag!="P1Git2"&&other.tag!="P2Git2"&&other.tag!="P1Chan2"&&other.tag!="P2Chan2" &&other.tag!="Portal1" &&other.tag !="Portal2")
-        other.tag = "Untagged";
+        if(other.tag !="Ground"&&other.tag !="Player1"&&other.tag !="Player2"&&other.tag!="P1Git2"&&other.tag!="P2Git2"&&other.tag!="P1Chan2"&&other.tag!="P2Chan2" &&other.tag!="Portal1" &&other.tag !="Portal2"
+        &&other.tag !="P1Git1"&&other.tag !="P2Git1"&&other.tag!="P1Ho2"&&other.tag!="P2Ho2")
+            if(this.tag == "Player1")
+            {
+                if(other.tag !="P1Yun1")
+                {
+                    other.tag = "Untagged";
+                }
+            }
+            else if(this.tag == "Player2")
+            {
+                if(other.tag !="P1Yun1")
+                {
+                    other.tag = "Untagged";
+                }
+            }
         }
     }

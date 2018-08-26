@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 82335261260981648}
   m_Layer: 0
   m_Name: HoSkill2
-  m_TagString: P2Ho1
+  m_TagString: P1Ho1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

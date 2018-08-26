@@ -19,9 +19,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4213687354104454}
-  - component: {fileID: 114571541631202860}
   - component: {fileID: 212531309180464832}
   - component: {fileID: 95921757121963180}
+  - component: {fileID: 114445291773434314}
   - component: {fileID: 114267829259841998}
   - component: {fileID: 60759039893751582}
   - component: {fileID: 82035324184763880}
@@ -39,8 +39,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1297054057321592}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.41711187, y: 0.69532603, z: 0}
+  m_LocalScale: {x: 0.8, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -69,21 +69,25 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.04, y: -0.13}
-      - {x: -0.04, y: 0.16}
-      - {x: -0.06, y: 0.19}
-      - {x: -0.22999999, y: 0.35}
-      - {x: -0.29, y: 0.38}
-      - {x: -0.45, y: 0.38}
-      - {x: -0.45, y: 0.26999998}
-      - {x: -0.32999998, y: 0.12}
-      - {x: -0.35, y: -0.14}
+    - - {x: -0.05963102, y: -0.11878228}
+      - {x: -0.06523991, y: 0.1431734}
+      - {x: -0.08243549, y: 0.17317343}
+      - {x: -0.23841329, y: 0.33597785}
+      - {x: -0.29, y: 0.3631733}
+      - {x: -0.45280445, y: 0.3575645}
+      - {x: -0.39337367, y: 0.2896961}
+      - {x: -0.3127659, y: 0.14215815}
+      - {x: -0.29716498, y: 0.03974539}
+      - {x: -0.29888964, y: -0.07288569}
+      - {x: -0.33030388, y: -0.16708219}
+      - {x: -0.38271308, y: -0.26192442}
       - {x: -0.45, y: -0.29999998}
       - {x: -0.45, y: -0.38}
       - {x: -0.29999998, y: -0.38}
       - {x: -0.22999999, y: -0.35}
-      - {x: -0.13, y: -0.28}
-      - {x: -0.049999997, y: -0.19999999}
+      - {x: -0.18427338, y: -0.29396817}
+      - {x: -0.14402217, y: -0.26597786}
+      - {x: -0.08365321, y: -0.18878222}
 --- !u!82 &82035324184763880
 AudioSource:
   m_ObjectHideFlags: 1
@@ -208,7 +212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d096acaf0251e409ba1acb7a229654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114571541631202860
+--- !u!114 &114445291773434314
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -216,9 +220,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1297054057321592}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50d096acaf0251e409ba1acb7a229654, type: 3}
+  m_Script: {fileID: 11500000, guid: 9fce86f9620dc1648a38a35f1bb178fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Yun: {fileID: 0}
 --- !u!212 &212531309180464832
 SpriteRenderer:
   m_ObjectHideFlags: 1

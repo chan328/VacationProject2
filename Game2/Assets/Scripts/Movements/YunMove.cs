@@ -7,6 +7,8 @@ public class YunMove : MonoBehaviour {
     public float jumpPower = 3f;
     public int StunNum;
     public bool stun; 
+    public bool Chanstun;
+    public bool Chanstun3;
     Vector3 movement;
     public bool isJumping = false;
     Rigidbody2D rig;
@@ -54,7 +56,7 @@ public class YunMove : MonoBehaviour {
     
     public void Move2()
 	{
-        if(stun == true) return;
+        if(stun == true || Chanstun == true || Chanstun3 == true) return;
 		Vector3 movevelo = Vector3.zero;
 
             if(Input.GetKey(KeyCode.UpArrow))
@@ -75,7 +77,7 @@ public class YunMove : MonoBehaviour {
 	}
 	public void Move()
     {
-        if (stun == true) return;
+        if(stun == true || Chanstun == true || Chanstun3 == true) return;
         Vector3 movevelo = Vector3.zero;
             if(Input.GetKey(KeyCode.W))
             {
@@ -126,6 +128,14 @@ public class YunMove : MonoBehaviour {
             {               
                 StartCoroutine("isStun");                             
             }
+            if(other.gameObject.tag == "P2Chan1")
+            {
+                StartCoroutine("isChanStun");
+            }
+            if(other.gameObject.tag == "P2Chan3")
+            {
+                StartCoroutine("isChanskill3Stun");
+            }
         }
         else
         {
@@ -137,6 +147,14 @@ public class YunMove : MonoBehaviour {
             {                
                 StartCoroutine("isStun");                             
             }
+            if(other.gameObject.tag == "P1Chan1")
+            {
+                StartCoroutine("isChanStun");
+            }
+            if(other.gameObject.tag == "P1Chan3")
+            {
+                StartCoroutine("isChanskill3Stun");
+            }
         }
     }
     IEnumerator isStun()
@@ -144,6 +162,18 @@ public class YunMove : MonoBehaviour {
         stun = true;
         yield return new WaitForSeconds(0.5f);
         stun = false;
+    }
+    IEnumerator isChanStun()
+    {
+        Chanstun = true;
+        yield return new WaitForSeconds(1f);
+        Chanstun = false;
+    }
+    IEnumerator isChanskill3Stun()
+    {
+        Chanstun3 = true;
+        yield return new WaitForSeconds(1.5f);
+        Chanstun3 = false;
     }
 }
     

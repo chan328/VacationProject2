@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Gameplayer : MonoBehaviour {
+public ChooseChar ChooseCharacter;
 public Slider SHP1,SHP2;
 public GameObject Yun,Git,Ho,Chan;
 public static int player1 {get; set;}
@@ -15,10 +16,12 @@ Text HP2;
 Vector3 vec1 = new Vector3(-1.5f,-1,-1);
 Vector3 vec2 = new Vector3(1.5f,-1,-1);   
 Quaternion qua = new Quaternion(0,0,0,0);
-	// Use this for initialization
-	void Start () {
-		player1 = 1;
-		player2 = 0;		 
+    // Use this for initialization
+
+    void Start () {
+        ChooseCharacter = GameObject.Find("CharSelect").GetComponent<ChooseChar>();
+        player1 = ChooseCharacter.FirstChar;
+		player2 = ChooseCharacter.SecondChar;		 
 		HP1 = GameObject.Find("P1HP").GetComponent<Text>();
 		HP2 = GameObject.Find("P2HP").GetComponent<Text>();
 		if(player1 == 0)

@@ -62,7 +62,7 @@ public class GitNormalAtk : MonoBehaviour {
     IEnumerator Normal()
     {
         Can_NormalAttack = false;
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.6f);
         Can_NormalAttack = true;
     }
 }
