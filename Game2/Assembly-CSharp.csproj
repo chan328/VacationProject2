@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Prefabs\CharacterPrefab\Sp.cs" />
+    <Compile Include="Assets\Prefabs\Skill\UhSkill\UhNormalAttack.cs" />
     <Compile Include="Assets\Scripts\ChooseChar.cs" />
     <Compile Include="Assets\Scripts\ChooseStage.cs" />
     <Compile Include="Assets\Scripts\Gameplayer.cs" />
@@ -73,6 +74,7 @@
     <Compile Include="Assets\Scripts\Movements\HoMove.cs" />
     <Compile Include="Assets\Scripts\Movements\UhMove.cs" />
     <Compile Include="Assets\Scripts\Movements\YunMove.cs" />
+    <Compile Include="Assets\Scripts\Practice.cs" />
     <Compile Include="Assets\Scripts\Skill\Chan\ChanChase.cs" />
     <Compile Include="Assets\Scripts\Skill\Chan\ChanChase2.cs" />
     <Compile Include="Assets\Scripts\Skill\Chan\ChanNormalAttack.cs" />

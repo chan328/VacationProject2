@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Gameplayer : MonoBehaviour {
 public ChooseChar ChooseCharacter;
 public Slider SHP1,SHP2;
-public GameObject Yun,Git,Ho,Chan;
+public GameObject Yun,Git,Ho,Chan,Uh;
 public static int player1 {get; set;}
 public static int player2 {get; set;}
 public static int HP1_ {get; set;}
@@ -80,7 +80,20 @@ Quaternion qua = new Quaternion(0,0,0,0);
             GameObject c2 = Instantiate(Chan,vec2,qua);
             c2.tag = "Player2";
         }
-
+		if(player1 == 4)
+		{
+			SHP1.maxValue = 100;
+			HP1_ = 100;
+            GameObject c1 = Instantiate(Uh,vec1,qua);
+            c1.tag = "Player1";
+        }
+		if(player2 == 4)
+		{
+			SHP2.maxValue = 100;
+			HP2_ = 100;
+            GameObject c2 = Instantiate(Uh,vec2,qua);
+            c2.tag = "Player2";
+        }
 	}
 	
 	// Update is called once per frame

@@ -164,7 +164,7 @@ public class GetDamage : CharMove {
             }
         }
         if(other.tag !="Ground"&&other.tag !="Player1"&&other.tag !="Player2"&&other.tag!="P1Git2"&&other.tag!="P2Git2"&&other.tag!="P1Chan2"&&other.tag!="P2Chan2" &&other.tag!="Portal1" &&other.tag !="Portal2"
-        &&other.tag !="P1Git1"&&other.tag !="P2Git1"&&other.tag!="P1Ho2"&&other.tag!="P2Ho2")
+        &&other.tag !="P1Git1"&&other.tag !="P2Git1"&&other.tag!="P1Ho2"&&other.tag!="P2Ho2"&&other.tag!="P1Chan3"&&other.tag!="P2Chan3"&&other.tag!="P1Uh3"&&other.tag!="P2Uh3")
             if(this.tag == "Player1")
             {
                 if(other.tag !="P1Yun1")

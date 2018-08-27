@@ -3,18 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class UhMove : CharMove {
+    public bool Using3;
     public Rigidbody2D UhRB;
     public bool stun = false;
     public bool Chanstun = false;
     public bool Chanstun3 = false;
     void Start()
     {
+        
         UhRB = gameObject.GetComponent<Rigidbody2D>();
     }
 
     void FixedUpdate()
     {
-        if (stun == false && Chanstun == false && Chanstun3 == false)
+        if (stun == false && Chanstun == false && Chanstun3 == false && Using3 == false)
         {
             if (gameObject.tag == "Player1")
                 base.Move();
@@ -25,7 +27,7 @@ public class UhMove : CharMove {
 
     void Update()
     {
-
+        
     }
     private void OnTriggerEnter2D(Collider2D other)
     {

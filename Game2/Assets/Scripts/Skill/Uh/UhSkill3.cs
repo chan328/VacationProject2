@@ -15,7 +15,7 @@ public class UhSkill3 : MonoBehaviour {
 	void Update () {
         if(canuse == true)
         {
-                if (this.gameObject.tag == "Player1")
+            if (this.gameObject.tag == "Player1")
             {
                 if (Input.GetKeyDown(KeyCode.Space))
                 {

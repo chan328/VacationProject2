@@ -42,6 +42,12 @@ TagManager:
   - Ch2
   - P1Uh3
   - P2Uh3
+  - P1Uh0
+  - P2Uh0
+  - P1Uh1
+  - P2Uh1
+  - P1Uh2
+  - P2Uh2
   layers:
   - Default
   - TransparentFX
