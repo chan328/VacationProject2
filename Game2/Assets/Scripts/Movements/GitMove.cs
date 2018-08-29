@@ -50,7 +50,7 @@ Rigidbody2D gitrig;
             {               
                 StartCoroutine("isStun");                             
             }
-            if(other.gameObject.tag == "P2Chan1")
+            if(other.gameObject.tag == "P2Chan1"||other.gameObject.tag == "P2Uh2")
             {
                 StartCoroutine("isChanStun");
             }
@@ -69,7 +69,7 @@ Rigidbody2D gitrig;
             {                
                 StartCoroutine("isStun");                             
             }
-            if(other.gameObject.tag == "P1Chan1")
+            if(other.gameObject.tag == "P1Chan1"||other.gameObject.tag == "P1Uh2")
             {
                 StartCoroutine("isChanStun");
             }
@@ -138,7 +138,19 @@ Rigidbody2D gitrig;
                         break;   
                     case "P2Chan3":
                         Gameplayer.HP1_ -= 30;
-                        break;         
+                        break;  
+                    case "P2Uh0":
+                        Gameplayer.HP2_ -= 10;
+                        break;
+                    case "P2Uh1":
+                        Gameplayer.HP1_ -= 10;
+                        break;
+                    case "P2Uh2":
+                        Gameplayer.HP1_ -= 10;
+                        break;  
+                    case "P2Uh3":
+                        Gameplayer.HP1_ -= 50;
+                        break;        
                 }
             }
             else if (this.tag == "Player2")
@@ -198,7 +210,19 @@ Rigidbody2D gitrig;
                         break;
                     case "P1Chan3":
                         Gameplayer.HP2_ -= 30;
-                        break;                                         
+                        break;  
+                    case "P1Uh0":
+                        Gameplayer.HP2_ -= 10;
+                        break;
+                    case "P1Uh1":
+                        Gameplayer.HP2_ -= 10;
+                        break;
+                    case "P1Uh2":
+                        Gameplayer.HP2_ -= 10;
+                        break;  
+                    case "P1Uh3":
+                        Gameplayer.HP2_ -= 50;
+                        break;                                       
                 }
             }
         if(other.tag !="Ground"&&other.tag !="Player1"&&other.tag !="Player2"&&other.tag!="P1Git2"&&other.tag!="P2Git2"&&other.tag!="P1Chan2"&&other.tag!="P2Chan2" &&other.tag!="Portal1" &&other.tag !="Portal2"

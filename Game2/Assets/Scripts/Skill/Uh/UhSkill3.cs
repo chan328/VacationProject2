@@ -21,36 +21,32 @@ public class UhSkill3 : MonoBehaviour {
                 {
                     if (this.transform.localScale.x > 0)
                     {
-                        Instantiate(Skill3, this.transform);
-                        Skill3.transform.localScale = new Vector3(1, 1, 1);
+                        Instantiate(Skill3, this.transform);                        
                         StartCoroutine("Skillcool");
                     }
-                    else
+                    else if (this.transform.localScale.x < 0)
                     {
                         Instantiate(Skill3, this.transform);
-                        Skill3.transform.localScale = new Vector3(-1, -1, -1);
                         StartCoroutine("Skillcool");
-                    }
-                }
-                else if (this.gameObject.tag == "Player2")
-                {
-                    if(Input.GetKeyDown(KeyCode.Keypad0))
-                    {
-                        if (this.transform.localScale.x > 0)
-                        {
-                            Instantiate(Skill3, this.transform);
-                            Skill3.transform.localScale = new Vector3(1, 1, 1);
-                            StartCoroutine("Skillcool");
-                        }
-                        else
-                        {
-                            Instantiate(Skill3, this.transform);
-                            Skill3.transform.localScale = new Vector3(-1, -1, -1);
-                            StartCoroutine("Skillcool");
-                        }
                     }
                 }
             }
+            else if (this.gameObject.tag == "Player2")
+            {
+                if(Input.GetKeyDown(KeyCode.Keypad0))
+                {
+                    if (this.transform.localScale.x > 0)
+                    {
+                        Instantiate(Skill3, this.transform);
+                        StartCoroutine("Skillcool");
+                    }
+                    else if (this.transform.localScale.x < 0)
+                    {
+                        Instantiate(Skill3, this.transform);
+                        StartCoroutine("Skillcool");
+                    }
+                }
+            }           
         }
 	}
     IEnumerator Skillcool()

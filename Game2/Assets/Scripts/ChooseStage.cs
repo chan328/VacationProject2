@@ -22,6 +22,12 @@ public class ChooseStage : MonoBehaviour {
             case 2:
                 SceneManager.LoadScene("Stage2");
                 break;
+            case 3:
+                SceneManager.LoadScene("Stage3");
+                break;
+            case 4:
+                SceneManager.LoadScene("Stage4");
+                break;
             default:
                 Debug.Log("에러에러");
                 break;

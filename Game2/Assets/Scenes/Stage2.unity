@@ -740,7 +740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 0.9481132, b: 0.9481132, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2219,7 +2219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2676,12 +2676,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75e3b3fcba411bf4b943651c2b0387fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ChooseCharacter: {fileID: 0}
   SHP1: {fileID: 1611740361}
   SHP2: {fileID: 1733171273}
   Yun: {fileID: 1690789231275602, guid: 279d31901b36f714694ff52c7af85f7f, type: 2}
   Git: {fileID: 1402341984046370, guid: d0b399434dd1f3940942c3a404ae9040, type: 2}
   Ho: {fileID: 1319080551747740, guid: d05442a59f096514491223dd01cfed41, type: 2}
   Chan: {fileID: 1921169783968958, guid: f8f79e17489f18746a013a7b78e6d51e, type: 2}
+  Uh: {fileID: 1606887936855118, guid: a445aff59a995c24a8f91366931c9935, type: 2}
 --- !u!1 &2058733559
 GameObject:
   m_ObjectHideFlags: 0

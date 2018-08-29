@@ -40,6 +40,10 @@ GameObject:
   - component: {fileID: 114037408537964834}
   - component: {fileID: 114836885978220846}
   - component: {fileID: 60822199276301734}
+  - component: {fileID: 114403105681006216}
+  - component: {fileID: 114166642848247992}
+  - component: {fileID: 114655475337936466}
+  - component: {fileID: 114150383633090440}
   m_Layer: 0
   m_Name: Uh
   m_TagString: Untagged
@@ -93,7 +97,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 5
+  m_Constraints: 4
 --- !u!60 &60822199276301734
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -141,10 +145,65 @@ MonoBehaviour:
   movePower: 2
   jumpPower: 3
   isJumping: 0
+  Using3: 0
   UhRB: {fileID: 0}
   stun: 0
   Chanstun: 0
   Chanstun3: 0
+--- !u!114 &114150383633090440
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1606887936855118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af8693f76939ef240a555d8a024111ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 0}
+  Skill0: {fileID: 1534835997391776, guid: 4ab1d86938f68c548b17c87c20f32841, type: 2}
+--- !u!114 &114166642848247992
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1606887936855118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43505b46ca022ed409bc5cc54182f5b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Skill1: {fileID: 1546975203089710, guid: cecd30974ccf2ad44895f61cc8daa942, type: 2}
+--- !u!114 &114403105681006216
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1606887936855118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74c2723217e0b74499d9f4fdfc3ae510, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movePower: 2
+  jumpPower: 3
+  isJumping: 0
+--- !u!114 &114655475337936466
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1606887936855118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a7f100bfe9c7e1499fa7e752255fce5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UhRender: {fileID: 0}
+  Counter: {fileID: 21300000, guid: 503067bcb27ec2947812459a1ad65324, type: 3}
+  Ego: {fileID: 21300000, guid: 9730ce86a323dc74093b803eefcdab9e, type: 3}
+  Skill2: {fileID: 1459330852232820, guid: c1f49c86a4a61a543af91b5568f71e2f, type: 2}
 --- !u!114 &114836885978220846
 MonoBehaviour:
   m_ObjectHideFlags: 1

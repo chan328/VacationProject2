@@ -9,8 +9,7 @@ public class UhMove : CharMove {
     public bool Chanstun = false;
     public bool Chanstun3 = false;
     void Start()
-    {
-        
+    {        
         UhRB = gameObject.GetComponent<Rigidbody2D>();
     }
 
@@ -41,7 +40,7 @@ public class UhMove : CharMove {
             {
                 StartCoroutine("isStun");
             }
-            if (other.gameObject.tag == "P2Chan1")
+            if (other.gameObject.tag == "P2Chan1"||other.gameObject.tag == "P2Uh2")
             {
                 StartCoroutine("isChanStun");
             }
@@ -60,7 +59,7 @@ public class UhMove : CharMove {
             {
                 StartCoroutine("isStun");
             }
-            if (other.gameObject.tag == "P1Chan1")
+            if (other.gameObject.tag == "P1Chan1"||other.gameObject.tag == "P1Uh2")
             {
                 StartCoroutine("isChanStun");
             }

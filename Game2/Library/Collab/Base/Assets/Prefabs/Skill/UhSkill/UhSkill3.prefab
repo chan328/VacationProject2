@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 95425909575832714}
   - component: {fileID: 50624698646898186}
   - component: {fileID: 114130525884411880}
+  - component: {fileID: 58583552457158884}
   m_Layer: 0
   m_Name: UhSkill3
   m_TagString: Untagged
@@ -38,7 +39,7 @@ Transform:
   m_GameObject: {fileID: 1337022751238832}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: -1, z: -1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -63,6 +64,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &58583552457158884
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1337022751238832}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.45
 --- !u!95 &95425909575832714
 Animator:
   serializedVersion: 3
@@ -93,6 +109,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rig: {fileID: 0}
+  Coll: {fileID: 0}
+  uhMove: {fileID: 0}
+  Using3: 0
 --- !u!212 &212607918837162936
 SpriteRenderer:
   m_ObjectHideFlags: 1

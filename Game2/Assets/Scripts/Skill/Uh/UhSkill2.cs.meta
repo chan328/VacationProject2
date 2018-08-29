@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0a7f100bfe9c7e1499fa7e752255fce5
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - UhRender: {instanceID: 0}
+  - Counter: {fileID: 21300000, guid: 503067bcb27ec2947812459a1ad65324, type: 3}
+  - Ego: {fileID: 21300000, guid: 9730ce86a323dc74093b803eefcdab9e, type: 3}
+  - Skill2: {fileID: 1459330852232820, guid: c1f49c86a4a61a543af91b5568f71e2f, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -61,9 +61,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Prefabs\CharacterPrefab\Sp.cs" />
-    <Compile Include="Assets\Prefabs\Skill\UhSkill\UhNormalAttack.cs" />
     <Compile Include="Assets\Scripts\ChooseChar.cs" />
     <Compile Include="Assets\Scripts\ChooseStage.cs" />
+    <Compile Include="Assets\Scripts\End.cs" />
+    <Compile Include="Assets\Scripts\GameOver.cs" />
     <Compile Include="Assets\Scripts\Gameplayer.cs" />
     <Compile Include="Assets\Scripts\GetDamage.cs" />
     <Compile Include="Assets\Scripts\Map\JumpTile.cs" />
@@ -101,8 +102,14 @@
     <Compile Include="Assets\Scripts\Skill\Ho\HoSkill1.cs" />
     <Compile Include="Assets\Scripts\Skill\Ho\HoSkill2.cs" />
     <Compile Include="Assets\Scripts\Skill\Ho\HoSkill3.cs" />
+    <Compile Include="Assets\Scripts\Skill\Uh\Counter.cs" />
+    <Compile Include="Assets\Scripts\Skill\Uh\Normal.cs" />
     <Compile Include="Assets\Scripts\Skill\Uh\Skill3.cs" />
+    <Compile Include="Assets\Scripts\Skill\Uh\UhNormalAttack.cs" />
+    <Compile Include="Assets\Scripts\Skill\Uh\UhSkill1.cs" />
+    <Compile Include="Assets\Scripts\Skill\Uh\UhSkill2.cs" />
     <Compile Include="Assets\Scripts\Skill\Uh\UhSkill3.cs" />
+    <Compile Include="Assets\Scripts\Skill\Uh\Uppercut.cs" />
     <Compile Include="Assets\Scripts\Skill\Yun\Attack.cs" />
     <Compile Include="Assets\Scripts\Skill\Yun\ChaseYun.cs" />
     <Compile Include="Assets\Scripts\Skill\Yun\NormalAttack.cs" />

@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 61650950303270902}
   m_Layer: 0
   m_Name: GitSkill3
-  m_TagString: P1Git3
+  m_TagString: P2Git3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

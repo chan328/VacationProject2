@@ -42,7 +42,7 @@ public bool Chanstun3;
             {               
                 StartCoroutine("isStun");                             
             }
-            if(other.gameObject.tag == "P2Chan1")
+            if(other.gameObject.tag == "P2Chan1"||other.gameObject.tag == "P2Uh2")
             {
                 StartCoroutine("isChanStun");
             }
@@ -61,7 +61,7 @@ public bool Chanstun3;
             {                
                 StartCoroutine("isStun");                             
             }
-            if(other.gameObject.tag == "P1Chan1")
+            if(other.gameObject.tag == "P1Chan1"||other.gameObject.tag == "P1Uh2")
             {
                 StartCoroutine("isChanStun");
             }
